@@ -160,10 +160,7 @@ async def priv(interaction:discord.Interaction,msg:str,mention:discord.Member =N
        await interaction.response.send_message("sent succfully",ephemeral=True) 
        await mention.send(f'{interaction.user.name} want to tell you: {msg}')
     else:
-        await interaction.response.send_message("you do not have the permission to this action",ephemeral=True)   
-import os
-
-keep_alive()
+        await interaction.response.send_message("you do not have the permission to this action",ephemeral=True)
 @client.command()
 @commands.guild_only()
 @commands.is_owner()
@@ -252,6 +249,7 @@ async def adminmodal(ctx):
     #file = discord.File(gif, filename="file.gif")
     # await channel.send(file=file)
     await channel.send('***Click the button to apply to be an admin.***.', view=Admibutton())
+keep_alive()     
 discord = os.environ["discord"]     
 try:
   client.run(discord)
