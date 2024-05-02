@@ -250,9 +250,9 @@ async def adminmodal(ctx):
     # await channel.send(file=file)
     await channel.send('***Click the button to apply to be an admin.***.', view=Admibutton())
 keep_alive()     
-discord = os.environ["discord"]     
+discordD = os.environ["discord"]     
 try:
-  client.run(discord)
+  client.run(discordD)
 except discord.errors.HTTPException:
   print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
   os.system('kill 1')
