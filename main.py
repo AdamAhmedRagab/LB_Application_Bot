@@ -259,3 +259,4 @@ except discord.errors.HTTPException:
   print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
   os.system('kill 1')
   os.system("python restarter.py")
+print("velo")     
