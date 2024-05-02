@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 from discord.ui import TextInput
 from keep_alive import keep_alive
+import os
 i  = discord.Intents.all()
 owner_id = 662090286729658378
 class Adminappliction(discord.ui.Modal,title = "LastBullet Roster Appliction"):
@@ -250,7 +251,8 @@ async def adminmodal(ctx):
     #with open("398633398899310605.gif", "rb") as gif:
     #file = discord.File(gif, filename="file.gif")
     # await channel.send(file=file)
-    await channel.send('***Click the button to apply to be an admin.***.', view=Admibutton())     
+    await channel.send('***Click the button to apply to be an admin.***.', view=Admibutton())
+discord = os.environ["discord"]     
 try:
   client.run('MTExNjkxNjk0MDA0MTEwNTQzOQ.GXSArF.QXib_Tzw_zQWsp_jPqa0b1LMcWmkmFo1cHm86c')
 except discord.errors.HTTPException:
