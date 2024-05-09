@@ -67,7 +67,7 @@ class lbappliction(discord.ui.Modal,title = "LastBullet Clan Appliction"):
         embed.add_field(name="Nickname:", value=f"```{self.children[1].value}```")       
         embed.add_field(name="Age:", value=f"```{self.children[2].value}```")
         embed.add_field(name="Country:", value=f"```{self.children[3].value}```")  
-        embed.add_field(name="VALORANT Peak Rank:", value=f"```{self.children[4].value}```")
+        embed.add_field(name="What is the most online game you play?:", value=f"```{self.children[4].value}```")
         # embed.add_field(name="User:", value=f"```{interaction.user}```")     
         await channel.send(embed=embed)
         await interaction.response.send_message("Application sent to staff and Bot will reply the answer to you , please enable direct messages from everyone in settings to receive bot message", ephemeral=True)
