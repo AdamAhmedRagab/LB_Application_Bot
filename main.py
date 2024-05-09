@@ -5,7 +5,7 @@ from discord.ui import TextInput
 from keep_alive import keep_alive
 import os
 i  = discord.Intents.all()
-owner_id = 662090286729658378
+owner_id =1200490105371099327
 class Adminappliction(discord.ui.Modal,title = "LastBullet Roster Appliction"):
      q1 = TextInput(label="Name?")
      q2 =  TextInput(label = "Age?")  
