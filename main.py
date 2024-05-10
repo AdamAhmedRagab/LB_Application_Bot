@@ -135,7 +135,7 @@ async def accept(interaction, member: discord.Member):
      role = discord.utils.get(interaction.guild.roles, id= 1006853269462728765)
      guild = client.get_guild(662064075626250310) 
      member = guild.get_member(member.id)
-     await member.edit(nick=f'LB {member.display_name}')
+     await member.edit(nick=f'{member.display_name}')
      channel = client.get_channel(1151179158555217960)
      await member.add_roles(role) 
      await member.remove_roles(discord.utils.get(interaction.guild.roles, id=662097656306466826))
