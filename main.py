@@ -136,7 +136,7 @@ async def accept(interaction, member: discord.Member):
      guild = client.get_guild(662064075626250310) 
      member = guild.get_member(member.id)
      await member.edit(nick=f'LB {member.display_name}')
-     channel = client.get_channel(1072277058358612018)
+     channel = client.get_channel(1151179158555217960)
      await member.add_roles(role) 
      await member.remove_roles(discord.utils.get(interaction.guild.roles, id=662097656306466826))
      await member.send("You have been approved to be member, welcome to LastBullet clan :heart: (Lastbullet application team™)")   
